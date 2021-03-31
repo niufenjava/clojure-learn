@@ -1,15 +1,15 @@
 (ns clojure.examples.Function)
-; Clojure 函数
+; # Clojure 函数
 
 ;1、Clojure 定义函数
-; 函数通过使用 defn 宏来定义。 以下是函数定义的一般语法。
-; 语法
+; 函数通过使用 defn 宏来定义。
+;* 语法
 ;(defn functionname
 ;   “optional documentation string”
 ;   [arguments]
 ;   (code block))
 
-;; This program displays Hello World
+;; * 举例
 (defn Example []
   (def x 1)
   (def y 1.25)

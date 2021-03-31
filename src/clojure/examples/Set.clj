@@ -53,7 +53,9 @@
 ;返回值 − 如果元素存在于集合中则返回true，如果元素不存在则返回false。
 (defn example4 []
   (println (contains? (set '(3 2 1)) 2))
-  (println (contains? (set '(3 2 1)) 5)))
+  (println (contains? (set '(3 2 1)) 5))
+  ;(println (remove (set '(3 2 1)) 3))
+  )
 (example4)
 (println (str "-----------------------------------------------------------------"))
 
@@ -91,7 +93,7 @@
 (defn example7 []
   (println (set/union #{1 2} #{3 4})))
 (example7)
-(println (str "-----------------------------------------------------------------"))
+(println (str "-------------------------example7 end----------------------------------------"))
 
 ;8、Clojure difference
 ;返回一个没有剩余集合的元素的第一个集合。

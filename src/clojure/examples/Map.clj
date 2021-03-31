@@ -150,9 +150,10 @@
 ;返回值 - 根据键的select子句从映射返回键。
 (defn example12 []
   (def demokeys (hash-map "z" 1 "b" 2 "a" 3))
-  (println (select-keys demokeys ["z" "a"])))
+  (def demokeys2 (select-keys demokeys ["z" "a"]))
+  (println demokeys2))
 (example12)
-(println (str "-----------------------------------------------------------------"))
+(println (str "example12-----------------------------------------------------------------"))
 
 
 ;12、Clojure Maps rename-keys

@@ -9,8 +9,8 @@
 ;   例如。 IOException，SQLException等。检查的异常在编译时检查。
 ;   让我们考虑下面的程序对一个名为Example.txt的文件进行操作。 但是，可能总是有一种情况，其中文件Example.txt不存在
 (defn Example []
-  (def string1 (slurp "Example.txt"))
-  ;(def string1 (slurp "Example1.txt"))
+  ;(def string1 (slurp "Example.txt"))
+  (def string1 (slurp "Example1.txt"))
   (println string1))
 (Example)
 (println (str "-----------------------------------------------------------------"))
@@ -46,7 +46,7 @@
 
 (defn Example2 []
   (try
-    (def string1 (slurp "Example2.txt"))
+    (def string1 (slurp "Example.txt"))
     (println string1)
     (catch Exception e (println (str "caught exception: " (.getMessage e))))))
 (Example2)
